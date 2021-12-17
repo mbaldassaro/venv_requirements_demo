@@ -16,17 +16,17 @@ Ok. You're convinced. So how do you create a virtual environment and requirement
 
 Open the command prompt (or terminal, if using a Mac) and create a new project directory called 'test-env' and change directories to work in it. 
 
-> mkdir test-env && cd test-env
+> > mkdir test-env && cd test-env
 
 If you are using Python 3 (and you should be), the 'venv' package for creating virtual environments is included by default (Note: if you are using Python 2, you will need to [install, use and follow instructions for the 'virtualenv' package](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)). On the command prompt, enter:
 
-> py -3 -m venv env 
+> > py -3 -m venv env 
 
 (if you are using a Mac, in the terminal, enter: python3 -m venv env)
 
 This creates a virtual environment named 'env' which you can activate for your project to install packages, write project code, etc. To activate 'env', on the command prompt, enter:
 
-> env\Scripts\activate.bat
+> > env\Scripts\activate.bat
 
 (if you are using a Mac, in the terminal, enter: source env/bin/activate) 
 
@@ -66,7 +66,7 @@ If you open up the requirements.txt file, you will see the packages you installe
 
 Once you have created your requirements.txt file and are ready to commit your project code to Github, you can deactivate your virtual environment using the following command:
 
-> deactivate
+> > deactivate
 
 The (env) before the prompt should disappear to signify that you are no longer in the virtual environment. Now you can commit your project code to Github with the requirements.txt file. 
 
@@ -84,13 +84,13 @@ This repository contains a requirements.txt file with the packages needed (panda
 
 To clone this repository and work in the project director, on the command prompt, enter:
 
-> gh repo clone https://github.com/mbaldassaro/venv_requirements_demo.git && cd venv_requirements_demo
+> > gh repo clone https://github.com/mbaldassaro/venv_requirements_demo.git && cd venv_requirements_demo
 
 (note: the command above assumes you are using 'https' for cloning Github repositories. If you are using SSH, replace 'gh repo clone' with 'git clone')
 
 Now create a virtual environment and activate it:
 
-> py -3 -m venv env && env\Scripts\activate.bat
+> > py -3 -m venv env && env\Scripts\activate.bat
 
 (if you are using a Mac: python3 -m venv env && source env/bin/activate)
 
@@ -104,7 +104,7 @@ Finally, execute the example.py script to see the results:
 
 If everything ran correctly, you should see two randomly selected rows from the dataframe.
 
-That's it! Wasn't that easy? And now you know how to ensure your projects always function as you designed them using virtual environments and how others can reproduce your projects using requirements.txt files.
+That's it! Now you know how to ensure your projects always function as you designed them using virtual environments and how others can reproduce your projects using requirements.txt files.
 
 
 
