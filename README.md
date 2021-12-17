@@ -1,6 +1,6 @@
 # Virtual Environments and requirements.txt 
 
-A virtual environment is an *isolated* environment for your Python project. Using virtual environments ensures that your projects are leveraging all necessary Python packages - and necessary versions of those packages - to keep your code function as designed. You should *always* create virtual environments for your projects. If you don't, all your projects will use the same packages and versions installed globally for your projects. 
+A virtual environment is an *isolated* environment for your Python project. Using virtual environments ensures that your projects are leveraging all necessary Python packages - and necessary versions of those packages - to keep your code functioning as designed. You should *always* create virtual environments for your projects. If you don't, all your projects will use the same packages and versions installed globally for your projects. 
 
 Why is this important? Consider a scenario where you have two projects, both which depend on different versions of a Python package installed on your system. The first project relies on v1.0 of that package, which includes functions that have been deprecated in v2.0; the second project relies on v2.0, which includes functions not available in v1.0. If you update the globally installed package on your system from v1.0 to v2.0, you will break the first project. 
 
