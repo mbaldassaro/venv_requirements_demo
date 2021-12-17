@@ -8,7 +8,7 @@ Using virtual environments allows you to run *both versions of a package in isol
 
 In addition to using virtual environments to ensure your code continues to function as designed *for you*, you should create requirements.txt files to ensure that all the necessary Python packages - and necessary versions of those packages - are documented *for others* to ensure reproducibility. A requirements.txt file will keep track of all the Python packages and versions you have installed and used in your project (see example in this repo). 
 
-If you include a requirements.txt file with your project code, someone can create a virtual environment, clone your project into it, install all the necessary packages and versions using the requirements.txt file, and reproduce your project as it was designed. If you ae using Git for version control, you can include an updated requirements.txt file with each commit to ensure that each version of your code functions as designed at the time. 
+If you include a requirements.txt file with your project code, another user can clone your project, create a virtual environment, install all the necessary packages and versions using the requirements.txt file, and reproduce your project as it was designed. If you ae using Git for version control, you can include an updated requirements.txt file with each commit to ensure that each version of your code functions as designed at the time. 
 
 Ok. You're convinced. So how do you create a virtual environment and requirements.txt file?
 
