@@ -55,9 +55,10 @@ You can now run this script on the command prompt to see that it works:
 
 Running this script should return two random rows from the dataframe in the command prompt:
 
-  Letter  Number
-4      E       1
-0      A       5
+|(index)| Letter | Number
+|:------|:-------|:-----|
+| 4     | E      | 1    |  
+| 0     | A      | 5    | 
 
 ### Creating a requirements.txt file
 
