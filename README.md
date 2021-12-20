@@ -45,6 +45,7 @@ import pandas as pd
 import numpy as np
 data = {'Letter': ['A', 'B', 'C', 'D', 'E'], 'Number': [5, 4, 3, 2, 1]}
 df = pd.DataFrame(data) #this creates a dataframe using 'data' above containing 5 rows x 2 columns 
+np.random.seed(2022) #set random.seed(#) guarantees result will be static and replicable
 print(df.loc[np.random.choice(df.index, size=2)]) #randomly selects and prints 2 rows from the dataframe
 ```
 
@@ -52,7 +53,11 @@ You can now run this script on the command prompt to see that it works:
 
 > (env) > python example.py
 
-(Running this script should return two random rows from the dataframe in the command prompt)
+Running this script should return two random rows from the dataframe in the command prompt:
+
+  Letter  Number
+4      E       1
+0      A       5
 
 ### Creating a requirements.txt file
 
