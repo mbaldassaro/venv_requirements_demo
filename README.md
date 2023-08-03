@@ -20,7 +20,7 @@ Open the command prompt (or terminal, if using a Mac) and create a new project d
 
 If you are using Python 3 (and you should be), the 'venv' package for creating virtual environments is included by default (Note: if you are using Python 2, you will need to [install, use and follow instructions for the 'virtualenv' package](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)). On the command prompt, enter:
 
-> python -m venv env 
+> py -3 -m venv env 
 
 (if you are using a Mac, in the terminal, enter: python3 -m venv env)
 
@@ -96,7 +96,7 @@ To clone this repository and work in the project director, on the command prompt
 
 Now create a virtual environment and activate it:
 
-> python -m venv env && env\Scripts\activate.bat
+> py -3 -m venv env && env\Scripts\activate.bat
 
 (if you are using a Mac: python3 -m venv env && source env/bin/activate)
 
