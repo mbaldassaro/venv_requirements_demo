@@ -20,7 +20,7 @@ Open the command prompt (or terminal, if using a Mac) and create a new project d
 
 If you are using Python 3 (and you should be), the 'venv' package for creating virtual environments is included by default (Note: if you are using Python 2, you will need to [install, use and follow instructions for the 'virtualenv' package](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)). On the command prompt, enter:
 
-> py -3 -m venv env 
+> python -m venv env 
 
 (if you are using a Mac, in the terminal, enter: python3 -m venv env)
 
@@ -34,7 +34,7 @@ Once the environment has been activated, you should see (env) appear before the 
 
 Now you can begin installing your packages and writing code that depends on those packages, e.g. to install Pandas and NumPy: 
 
-> (env) > pip3 install pandas numpy
+> (env) > python -m pip install pandas numpy
 
 These packages - and the dependencies on which they rely - will be stored in the env/Lib/site-packages path in your project directory for access in your project code.
 
@@ -64,7 +64,7 @@ Running this script should return two random rows from the dataframe in the comm
 
 When you are ready to commit your project code to a Github repository, you can create a requirements.txt file with one simple command on the command prompt:
 
-> (env) > pip3 freeze > requirements.txt
+> (env) > python -m pip freeze > requirements.txt
 
 This will generate a requirements.txt file in the root folder of your project. 
 
@@ -96,13 +96,13 @@ To clone this repository and work in the project director, on the command prompt
 
 Now create a virtual environment and activate it:
 
-> py -3 -m venv env && env\Scripts\activate.bat
+> python -m venv env && env\Scripts\activate.bat
 
 (if you are using a Mac: python3 -m venv env && source env/bin/activate)
 
 Now install the necessary packages using the requirements.txt file:
 
-> (env) > pip3 install -r requirements.txt
+> (env) > python -m pip install -r requirements.txt
 
 Finally, execute the example.py script to see the results:
 
